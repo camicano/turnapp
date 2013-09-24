@@ -1,0 +1,17 @@
+<!-- artists column -->
+<div class='four columns'>
+<h1 class='h1'>Artists</h1>
+<%= render partial: "artists/artists", locals: {artists: @artists} %>
+</div>
+
+<div class='offset-by-two columns'>
+<h1 class='h1'>Albums</h1>
+<%= render partial: "albums/albums", locals: {albums: @albums} %>
+
+</div>  
+
+<div class='offset-by-twelve'>
+<h1 class='h1'>Song</h1>
+<%= render partial: "songs", locals: {songs: @songs} %>
+<%= render partial: "form_song", locals: {songs: @songs} %>
+</div>

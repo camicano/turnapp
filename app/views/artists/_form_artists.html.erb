@@ -1,0 +1,20 @@
+<h1 class='h2'>Add a New Artists</h1>
+	<!-- 	<form method='post' action='/artists'>
+			<label>Name</label>
+			<input type="text" name="artist[name]" />
+			<label>Bio</label>
+			<textarea name="artist[bio]">
+			</textarea>
+			<input type='submit' value='add artist' />
+		</form> -->
+<%= form_for artist do |f| %>
+	<div>
+	<%= f.label "Name" %>
+	<%= f.text_field :name %>
+	</div>
+	<div>
+	<%= f.label "Bio" %>
+	<%= f.text_field :bio %>
+	</div>
+	<%= f.submit %>
+<% end %>

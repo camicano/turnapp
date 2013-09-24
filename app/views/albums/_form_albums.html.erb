@@ -1,0 +1,21 @@
+<h1 class='h2'>Add a New Album</h1>
+<!-- 	<form method='post' action='/artists/new'>
+		<label>Title</label>
+		<input type="text" name="album[title]" />
+		<label>Genre</label>
+		<input type="text" name="album[genre]" />
+		<input type='submit' value='add album' />
+	</form> -->
+<%= form_for album, url: "/artists/#{params[:artist_id]}/album/#{album.id}/new" do |f| %>
+	<div>
+	<%= f.label "Title" %>
+	<%= f.text_field :title %>
+	</div>
+	<div>
+	<%= f.label "Genre" %>
+	<%= f.text_field :genre %>
+	</div>
+	<%= f.submit %>
+<% end %> 
+
+

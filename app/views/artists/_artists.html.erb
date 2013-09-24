@@ -1,0 +1,20 @@
+<ul class='artists'>
+	<% artists.each do |artist| %>
+		<li>
+			<a class="a" href='/artists/<%= artist.id %>/albums'>
+				<h1 class='h2'><%= artist.name %></h1>
+			</a>
+			<p><%= artist.bio %></p>
+			<div class-'button'>
+			<form method="get" action="/artists/<%= artist.id %>/edit">
+				<input type='submit' value='edit' />
+			</form>	
+			<form method="delete" action="/artists/<%= artist.id %>">
+				<input class='button' type='submit' value='delete' />
+			</form>
+			</div>	
+		</li>
+	<% end %>
+</ul>
+
+	

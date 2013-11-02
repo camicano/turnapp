@@ -1,8 +1,8 @@
 <ul>
-		<% songs.each do |song| %>
-			<li><p><%= song.title %></h1></p>
-			<form method="delete" action="/artists/<%= params[:artist_id] %>/albums/<%= params[:album_id] %>/songs/<%= song.id %>">
-		<input type='submit' value='delete' />
-	</form>	
-		<% end %>
+	<% songs.each do |song| %>
+		<li><p><%= song.title %></h1></p>
+		<form method="delete" action="/artists/<%= params[:artist_id] %>/albums/<%= params[:album_id] %>/songs/<%= song.id %>">
+			<input type='submit' value='delete' />
+		</form>	
+	<% end %>
 </ul>	

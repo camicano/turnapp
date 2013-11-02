@@ -1,11 +1,10 @@
-<!-- artists column -->
 <div class='four columns'>
-<h1 class='h1'>Artists</h1>
-<%= render partial: "artists/artists", locals: {artists: @artists} %>
-<%= render partial: "artists/form_artists", locals: {artist: @artist} %>
+	<h1 class='h1'>Artists</h1>
+	<%= render partial: "artists/artists", locals: {artists: @artists} %>
+	<%= render partial: "artists/form_artists", locals: {artist: @artist} %>
 </div>
 
 <div class='offset-by-six'>
-<h1 class='h1'>Albums</h1>
-<%= render partial: "albums", locals: {albums: @albums} %>
+	<h1 class='h1'>Albums</h1>
+	<%= render partial: "albums", locals: {albums: @albums} %>
 </div>  

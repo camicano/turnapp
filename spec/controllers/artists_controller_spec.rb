@@ -25,10 +25,5 @@ describe ArtistsController do
 			get :index
 			@artists
 		end
-
-		# it "display a ul with a list of artists" do 
-		# 	get :index
-		# 	expect(response.body).to include("birdy")
-		# end
 	end
 end

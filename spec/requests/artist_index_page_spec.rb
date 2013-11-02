@@ -11,13 +11,11 @@ describe 'artist index page' do
 
 	it "displays a ul with the class 'artists'" do
 		get '/'
-		# puts response.body
 		response.body.should include("<ul class='artists'>")
 	end
 
 	it "displays a h1 with a valid artist name" do
 		get '/'
-		# puts response.body
 		response.body.should include("<h1>#{@valid_name}</h1>")
 	end
 

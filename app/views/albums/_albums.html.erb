@@ -1,20 +1,18 @@
-
-	<ul>
-		<% albums.each do |album| %>
-			<li>
-				<a class="a" href='/artists/<%= params[:artist_id] %>/albums/<%= album.id %>/songs' >	
-					<h1 class='h2'><%= album.title %></h1>
-				</a>
-			<!-- <h3><%= album.artist.name %></h3> -->
-				<p><%= album.genre %></p>
-				<form method="get" action="/artists/<%= params[:artist_id] %>/albums/<%= album.id %>/edit">
-					<input type='submit' value='edit' />
-				</form>	
-				<form method="delete" action="/artists/<%= params[:artist_id] %>/albums/<%= album.id %>">
-					<input type='submit' value='delete' />
-				</form>	
-			</li>
-		<% end %>
-	</ul>
+<ul>
+	<% albums.each do |album| %>
+		<li>
+			<a class="a" href='/artists/<%= params[:artist_id] %>/albums/<%= album.id %>/songs' >	
+				<h1 class='h2'><%= album.title %></h1>
+			</a>
+			<p><%= album.genre %></p>
+			<form method="get" action="/artists/<%= params[:artist_id] %>/albums/<%= album.id %>/edit">
+				<input type='submit' value='edit' />
+			</form>	
+			<form method="delete" action="/artists/<%= params[:artist_id] %>/albums/<%= album.id %>">
+				<input type='submit' value='delete' />
+			</form>	
+		</li>
+	<% end %>
+</ul>
 
 
